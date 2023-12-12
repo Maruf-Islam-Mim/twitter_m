@@ -1,0 +1,118 @@
+.twitter-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  .twitter-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    .twitter-left {
+      display: flex;
+      justify-content: center;
+      width: 55%;
+      .logo {
+        img {
+          width: 280px;
+        }
+      }
+    }
+  }
+  .twitter-right {
+    width: 45%;
+    .header {
+      h1 {
+        font-size: 70px;
+      }
+      h2 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+    }
+    .login-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 3px;
+      width: 300px;
+      margin-top: 30px;
+      border: var(--tw-border);
+      border-radius: 40px;
+      cursor: pointer;
+      span {
+        font-size: 20px;
+      }
+      p {
+        color: #536471;
+        font-weight: 500;
+        margin-top: -3px;
+        font-size: 14px;
+      }
+    }
+    .apple-btn {
+      .login-btn {
+        margin-top: 10px;
+        p {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      gap: 20px;
+      .divider-left {
+        height: 1px;
+        width: 125px;
+        background: rgb(239, 243, 244);
+      }
+      .divider-right {
+        height: 1px;
+        width: 125px;
+        background: rgb(239, 243, 244);
+      }
+    }
+    .create-account {
+      .login-btn {
+        padding: 7px;
+        margin-top: 10px;
+        background: var(--tw-primary-bg);
+        a {
+          color: white;
+        }
+      }
+      p {
+        font-size: 11px;
+        color: var(--tw-secondary-color);
+        margin-top: 5px;
+        width: 300px;
+
+        a {
+          color: var(--tw-primary-bg);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .sign-in {
+      margin-top: 40px;
+      p {
+        font-size: 30px;
+      }
+      .login-btn {
+        margin-top: 10px;
+        a {
+          color: var(--tw-primary-bg);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
